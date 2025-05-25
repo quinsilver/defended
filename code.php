@@ -7,7 +7,7 @@
     <style>
         #mapid { height: 500px; width: 100%; }
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="C:\Users\palis\OneDrive\Desktop\defended\style.css">
 </head>
 <body>
     <h1>Latest Emergency Device Location</h1>
