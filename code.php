@@ -29,5 +29,21 @@
         var marker = L.marker([lat, lon]).addTo(mymap);
         marker.bindPopup("<b>Latest Location!</b><br>Latitude: " + lat + "<br>Longitude: " + lon + "<br>Time: <?php echo htmlspecialchars($timestamp); ?>").openPopup();
     </script>
+
+    <nav class="navbar">
+    <div class="logo">
+        <a href="code.php">
+            <img src="pindot-logo.png" alt="pinDOT" />
+        </a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+
 </body>
 </html>
