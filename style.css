@@ -1,20 +1,3 @@
-:root {
-    /* Primary Colors */
-    --primary-red: #E53935;       /* Main accent (pin color) */
-    --primary-black: #212121;     /* Main text/header color */
-    --background-white: #FFFFFF;  /* Clean background */
-
-    /* Accent Colors */
-    --signal-gray: #BDBDBD;       /* For tower lines/icons */
-    --cool-slate: #37474F;        /* Navbar, footer, borders */
-    --alert-yellow: #FDD835;      /* Warning signals, highlights */
-
-    /* UI States */
-    --hover-red: #C62828;         /* Button/Link hover state */
-    --light-gray-bg: #F5F5F5;     /* Section background alternator */
-    --text-muted: #757575;        /* Muted/subtle text */
-}
-
 body {
     background-color: var(--background-white);
     color: var(--primary-black);
@@ -61,16 +44,4 @@ a:hover {
     background: var(--primary-red);
     border-radius: 50%;
     animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 10px rgba(229, 57, 53, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(229, 57, 53, 0);
-    }
 }
