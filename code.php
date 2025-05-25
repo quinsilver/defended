@@ -7,6 +7,7 @@
     <style>
         #mapid { height: 500px; width: 100%; }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Latest Emergency Device Location</h1>
