@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3F7D58; /*change color of navbar*/
+  background-color: #e7a11d !important; /*change color of navbar*/
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
@@ -15,6 +15,15 @@ body {
   width: 96%;
   z-index: 999;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease-in-out;
+}
+/* This class will be added when scrolling down */
+.navbar.hide {
+  top: -100px; /* Move it out of view */
+}
+
+body {
+  padding-top: 80px; /* Approx height of navbar */
 }
 
 .logo img {
@@ -39,35 +48,35 @@ body {
   color: #ffd700;
 }
 
-/* Hamburger button */
-.hamburger {
-  display: none;
-  font-size: 20px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
 /* Responsiveness*/
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #7c0e0e;
+    background-color: #e7a11d;
     position: absolute;
     top: 70px;
     right: 0;
-    width: 100%;
+    width: auto;
     text-align: center;
     padding: 1rem 0;
   }
-
   .nav-links.show {
     display: flex;
   }
 
-  .hamburger {
-    display: block;
-  }
+  /*Footer*/
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  display: block;          /* Makes it behave like a block element */
+  margin: 0 auto 1rem auto; /* Center horizontally + spacing below */
+  width: 120px;             /* Adjust size as needed */
+  height: auto;
+}
 }

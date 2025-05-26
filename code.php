@@ -36,14 +36,36 @@
             <img src="pictures/pindot-logo.png" alt="pinDOT" />
         </a>
     </div>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="indexes/contact-us.html">Contact</a></li>
     </ul>
     </nav>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h6>Footer na to</h6>
+            <img src="pictures/pindot-logo.png" alt="pinDOT Logo" class="footer-logo">
+        </div>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.add('hide');
+        } else {
+        // Scrolling up
+        navbar.classList.remove('hide');
+        }
+
+        lastScrollTop = scrollTop;
+        });
+</script>
 
 </body>
 </html>
