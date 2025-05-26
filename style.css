@@ -1,12 +1,13 @@
 body {
     padding-top: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EFEFEF;
 } 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: maroon; /*change color of navbar*/
+  background-color: #3F7D58; /*change color of navbar*/
   padding: 1rem 2rem;
   position: fixed;
   top: 0;

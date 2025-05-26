@@ -33,7 +33,7 @@
     <nav class="navbar">
     <div class="logo">
         <a href="code.php">
-            <img src="pindot-logo.png" alt="pinDOT" />
+            <img src="pictures/pindot-logo.png" alt="pinDOT" />
         </a>
     </div>
     <button class="hamburger" onclick="toggleMenu()">☰</button>
